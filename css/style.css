@@ -556,7 +556,7 @@ svg {
         
     }
     .over{
-        overflow: hidden;
+        overflow: inherit;
     }
 
 
