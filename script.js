@@ -46,11 +46,14 @@ var pictures = Array.from(document.querySelectorAll('.filter-div img'));
 var ar = Array.from(document.querySelectorAll('.filter-div'));    
 var modal = document.getElementById('wrap-modal');
 var contentModal = document.getElementById('modal-content');
+var body = Array.from(document.getElementsByTagName('body'));
 modal.onclick = function () {
     modal.style.display = "none";
+    body[0].classList.remove('over');
 }
 ar.forEach(item=>{
     item.onclick = function () {
+        body[0].classList.add('over');
         modal.style.display = "flex";
         img = Array.from(item.getElementsByTagName('img'));
         return contentModal.src = img[0].currentSrc;

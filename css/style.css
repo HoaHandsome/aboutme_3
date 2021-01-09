@@ -555,6 +555,9 @@ svg {
         display: inline-block;
         
     }
+    .over{
+        overflow: hidden;
+    }
 
 
 
