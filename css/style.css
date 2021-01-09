@@ -404,7 +404,7 @@ header ul li a{
      bottom: calc(100% - 15px);
 }
 
-/*  */
+/* other */
 
 .statistic-item{
     padding: 0 5px;
@@ -465,6 +465,111 @@ svg {
     font-size: 25px;
     color: #223D72;
 }
+/* picture */
+    #btn-container{
+        margin-bottom: 20px;
+        padding: 0 25px;
+        position: relative;
+        column-count: 4;
+    }
+    .btn-list{
+        margin-right: 50px;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 600;
+        color: rgb(136, 136, 136);
+        cursor: pointer;
+        outline: none;
+        
+    }
+    .btn-list:hover{
+        color: #000;
+    }
+    .filter-div{
+          background-color: #2196F3;
+            width: calc(50% - 10px);
+            margin: 5px;
+            display: none;
+            float: left;
+            overflow: hidden;
+            transition: 2s ease-in-out;
+            height: 200px;
+            position: relative;
+    }
+    .filter-div:nth-child(1){
+          height: 410px;
+     }
+     /* hover img */
+    .filter-div::after{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: none;
+        background-color: #000;
+        opacity: 0.3;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        
+    }
+    .filter-div .description-img{
+         content: "";
+        position: absolute;
+        height: 60px;
+        line-height: 60px;
+        padding: 0 20px;
+        text-transform: uppercase;
+        width: 100%;
+        background-color: #000;
+        opacity: 0.8;
+        color: #fff;
+        bottom: -60px;
+        transition: all 0.25s ease-in-out;
+        left: 0;
+    }
+    .filter-div:hover::after{
+        display: block;
+    }
+    .filter-div:hover > .description-img{
+        bottom: 0;
+    }
+
+     .filter-div img{
+         width: 100%;
+        height: 100%;
+        transition: 0.25s ease-in-out;
+        cursor: pointer;
+    }
+    .filter-div:hover img{
+        transform: scale(1.1);
+    }
+    .img-container {
+        margin-top: 20px;
+        overflow: hidden;
+    }
+    .btn-list.active {
+        color: #000;
+    }
+    .show {
+        display: inline-block;
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* contact */

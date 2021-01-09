@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/66e5d31267.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="modal-img">
+        <div class="group-img flex-between">
+            <div class="box img">
+                <img src="../img/blog.png" alt="">
+                <i id="left" class="fas fa-angle-left"></i>
+                <i id="right" class="fas fa-angle-right"></i>
+            </div>
+            <div class="box flex-column">
+                <h2>My picture</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+        </div>
+    <i class="fas fa-times"></i>
+    </div>
+    <style>
+        .modal-img{
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(7, 7, 7, 0.61);
+        }
+        .group-img{
+            margin: 50px 100px;
+            padding: 50px 20px;
+            background-color: #fff;
+            width: 100%;
+        }
+        .modal-img .img{
+            
+            position: relative;
+            overflow: hidden;
+        }
+        .modal-img .box{
+            text-align: left;
+             width: 48%;
+            display: flex;
+            flex-direction: column;
+        }
+        .modal-img h2{
+             font-size: 30px;
+            line-height: 33px;
+            color: #000;
+            font-weight: 700;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+        }
+        .modal-img p{
+             font-size: 16px;
+           line-height: 30px;
+            
+        }
+        .modal-img i{
+             position: fixed;
+             right: 20px;
+             top: 20px;
+             color: #fff;
+         }
+         .modal-img .img i{
+             position: absolute;
+             top: 50%;
+             color: #fff;
+             font-size: 35px;
+             right: -30px;
+             transition: all 0.2s;
+         }
+         .img #left{
+             left: -30px;
+         }
+          .modal-img .img:hover i{
+              right: 10px;
+          }
+        
+          .modal-img .img:hover #left{
+              left: 10px;
+          }
+        
+         
+    </style>
+</body>
+</html>

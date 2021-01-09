@@ -66,3 +66,13 @@
     background-color: #000;
     height: 100%;
 }
+.box-article{
+    width: 48%;
+}
+
+.quote{
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: rgb(242 237 255);
+    color: rgb(230, 50, 50);
+}

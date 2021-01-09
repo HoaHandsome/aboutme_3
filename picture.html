@@ -11,10 +11,6 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/66e5d31267.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="blog.css">
-    
-
-    
     <title>Document</title>
 </head>
 
@@ -109,73 +105,61 @@
                 <!-- item -->
                 <div class="wrap-content">
                     <!-- left -->
-                    <!-- article -->
-                    <div class="wrap-group article flex-column">
-                        <a href="#"><img src="./img/blog.png" alt=""></a>
-                        <h5 class="text-center title-article">
-                            <a href="#">HOW TO CREATE GOOGLE FONT DEVELOPER API KEY</a>
-                        </h5>
-                        <div class="text-center"> <span>June 15, 2017 by admin</span></div>
-                        <div class="content-group">
-                            <p>There are various ways for creating online CV and Resume. We recommend to create an online CV using one of our WordPress
-                            themes. We will show some basic tips of creating online CV in example of Certy. What you need to remnember is that you
-                            need to show yourself in professional and eye catching way despite all weakneces. So the purpose of the online CV is to
-                            underline your strongest skills and points, show achievements and provide positive and professional impression on your
-                            future Employer.
-                            
-                            Make an accurate and attractive couple photos of you and use in certy as first image and hover image. For example: 1st
-                            photo can be image of you with professional look and second image can be image with smile which may have positive effect
-                            on employer
-                            Welcome to visitors of your online CV and tell briefly about online CV and what they will find here or why you have
-                            created it
-                            Create a structure of your site in mind, write down on paper or somwhere else, you need to have structurized and logical
-                            data
-                            Need to understand you need to create resume with all sections on one page or you will have different section in
-                            different pages
-                            In case of one page resume structure may be following => About me => Personal Information => Professional Skills => Work
-                            Experience => Education => Achievements => Portfolio => Contact me or call to action button
-                            It is important to add some call to action button or contact section to the end of your page</p>
-                            <div class="quote">
-                                Achievements => Portfolio => Contact me or call to action button
-                                It is important to add some call to action button or contact section to the end of your page
-
+                    <div class="wrap-group">
+                        <h2>picture</h2>
+                        <div>
+                            <div id="btn-container" class="flex">
+                                <div class="div btn-list active" onclick="filterSelection('all')" >All </div>
+                                <div class="div btn-list" onclick="filterSelection('design')">Design </div>
+                                <div class="div btn-list" onclick="filterSelection('team')">Team </div>
+                                <div class="div btn-list" onclick="filterSelection('work')">Work </div>
                             </div>
-                            <p>
-                                In case of one page resume structure may be following => About me => Personal Information => Professional Skills => Work
-                                Experience => Education => Achievements => Portfolio => Contact me or call to action button
-                                It is important to add some call to action button
-
-                            </p>
-                            <div >
-                                <a href="#" class="category">Category</a>
-                            </div>
-                            <!-- article relate -->
-                            <div class="box-relate">
-                                <h3>Article relate</h3>
-                                <div class="flex-between">
-                                        <div class="box-article">
-                                            <a href="#"><img src="./img/blog.png" alt=""></a>
-                                            <h4><a class="title-article-relate" href="#">HOW TO CREATE GOOGLE FONT DEVELOPER API KEY</a></h4>
-                                        </div>
-                                        <div class="box-article">
-                                            <a href="#"><img src="./img/blog.png" alt=""></a>
-                                            <h4><a class="title-article-relate" href="#">HOW TO CREATE GOOGLE FONT DEVELOPER API KEY</a></h4>
-                                        </div>
-
+                            <div class="img-container">
+                                <div class="filter-div design">
+                                    <img src="./img/blog.png" alt="">
+                                    <div class="modal-img">
+                                        This is my picture
+                                    </div>
+                                </div>
+                                <div class="filter-div team">
+                                    <img src="./img/blog3.png" alt="">
+                                    <div class="modal-img">
+                                        This is my picture
+                                    </div>
+                                </div>
+                                <div class="filter-div design">
+                                    <img src="./img/blog2.png" alt="">
+                                    <div class="modal-img">
+                                        This is my picture
+                                    </div>
+                                </div>
+                                <div class="filter-div design">
+                                    <img src="./img/blog2.png" alt="">
+                                    <div class="modal-img">
+                                        This is my picture
+                                    </div>
+                                </div>
+                                <div class="filter-div work">
+                                    <img src="./img/blog3.png" alt="">
+                                    <div class="modal-img">
+                                        This is my picture
+                                    </div>
+                                </div>
+                                <div class="filter-div work">
+                                    <img src="./img/blog.png" alt="">
+                                    <div class="modal-img">
+                                        This is my picture
+                                    </div>
+                                </div>
+                                <div class="filter-div team">
+                                    <img src="./img/blog3.png" alt="">
+                                    <div class="modal-img">
+                                        This is my picture
+                                    </div>
                                 </div>
                             </div>
-                            <!-- box comment -->
-                            <div class="box-relate">
-                                <h3>comment</h3>
-                                <div>
-                                    <img src="./img/cmt.png" alt="">
-                                </div>
-                            </div>
-
-
                         </div>
                     </div>
-
                     <div class="wrap-group text-center" id="reserved">
                         Van Hoa @ All Rights Reserved 2021
                     </div>
@@ -202,5 +186,39 @@
 
     </section>
 </body>
-
+<script src="script.js"></script>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
