@@ -285,6 +285,8 @@
        .wrap-group {
             padding: 20px;
         }
+        #btn-container {
+        padding: 0 15px;}
 }
 @media only screen and (max-width: 568px) {
     /* --------card----- */
