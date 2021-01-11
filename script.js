@@ -81,7 +81,7 @@ ar.forEach(item=>{
         setTimeout(() => {
             menu.style.right ="0px";
             
-        }, 5);
+        }, 50);
     }
     function closeMenu() {
         body[0].classList.remove('over');
@@ -90,6 +90,6 @@ ar.forEach(item=>{
         setTimeout(() => {
             menu.style.display = "none";
             
-        }, 3000);
+        }, 500);
     
 }

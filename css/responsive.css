@@ -39,7 +39,7 @@
            background-color: rgb(255, 255, 255);
            height: auto;
            max-width: 300px;
-           transition: all 0.5s;
+           transition: all 0.2s;
            display: none;
        }
        header  #menu::before{
@@ -86,6 +86,7 @@
     }
     #menu-sidebar{
         display: block !important;
+        margin-bottom: 0;
     }
       #mask{
         position: fixed;
