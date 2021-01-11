@@ -287,6 +287,17 @@
         }
         #btn-container {
         padding: 0 15px;}
+
+         .filter-div{
+             height: 150px;
+            }
+            
+            .filter-div:nth-child(1){
+             height: 310px;
+         }
+         .btn-list {
+            margin-right: 25px;
+         }
 }
 @media only screen and (max-width: 568px) {
     /* --------card----- */
