@@ -298,6 +298,9 @@
          .btn-list {
             margin-right: 25px;
          }
+         #other h2{
+             margin-bottom: 0;
+         }
 }
 @media only screen and (max-width: 568px) {
     /* --------card----- */
