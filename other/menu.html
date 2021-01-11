@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/66e5d31267.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="mask"></div>
+    <!-- base  -->
+    <div id="wrap-modal">
+        <div class="flex-between" id="group-picture">
+            <div class="box picture">
+                <img alt="" src="" id="modal-content">
+                <!--                 <i id="left" class="fas fa-angle-left"></i>
+                <i id="right" class="fas fa-angle-right"></i> -->
+            </div>
+            <div class="box flex-column">
+                <h2 id="picture-title"></h2>
+                <p id="picture-description"></p>
+            </div>
+        </div>
+        <i class="fas fa-times"></i>
+    </div>
+    <!-- header -->
+    <header>
+        <div class="container flex-between">
+            <h1><a href="#">V.Hòa</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fas fa-bars"></i>
+                    <div id="sidebar">
+
+                        <!-- card -->
+                            <div class="card flex-column">
+                                <div class="picture-group">
+                                    <img class="avatar avatar-195" alt=""
+                                        src="https://certy.px-lab.com/attorney/wp-content/uploads/sites/5/2017/06/Certy_Attorney_2-195x195.jpg"
+                                        alt="">
+                                </div>
+                                <h2 class="text-center">le van hoa</h2>
+                                <p class="text-center">it-web</p>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-phone-alt"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="recent-post">
+                                <h3 class="text-center">RECENT POST</h3>
+                                <div class="list-articles">
+                                    <!-- article -->
+                                    <div class="item-article flex-column">
+                                        <div class="flex  flex-between">
+                                            <div class="pic-article">
+                                                <a href="#"><img src="../img/blog.png" alt=""></a>
+                                            </div>
+                                            <h4><a href="#">HOW TO CREATE GOOGLE MAPS DEVELOPER API KEY</a></h4>
+                                        </div>
+                                        <div class="flex category">
+                                            <a href="#">Category</a>
+                                            <p>date</p>
+                                
+                                        </div>
+                                    </div>
+                                    <!-- article -->
+                                    <div class="item-article flex-column">
+                                        <div class="flex  flex-between">
+                                            <div class="pic-article">
+                                                <a href="#"><img src="../img/blog.png" alt=""></a>
+                                            </div>
+                                            <h4><a href="#">HOW TO CREATE GOOGLE MAPS DEVELOPER API KEY</a></h4>
+                                        </div>
+                                        <div class="flex category">
+                                            <a href="#">Category</a>
+                                            <p>date</p>
+                                
+                                        </div>
+                                    </div>
+                                    <div class="flex-center">
+                                        <b> <a href="#" class="text-center">View More</a> </b>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <style>
+       header nav > ul > i{
+           position: fixed;
+           top: 20px;
+           right: 20px;
+             display: inline-block;
+            padding:15px 15px;
+            font-weight: 500;
+            color: #000;
+            font-weight: 700;
+            background-color: #fff;
+            border-radius: 50%;
+       }
+       header nav > ul > li{
+           display: block;
+           padding: 10px 0;
+       }
+       header nav > ul > li a{
+           display: block;
+           padding: 10px 0;
+           text-align: center
+       }
+       header nav > ul > li a:hover{
+           background-color: rgba(0, 0, 0, 0.397);
+           color: #fff;
+       }
+
+    #mask{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.397);
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+    header  nav{
+        content: " ";
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 100%;
+        width: 100%;
+        
+    }
+    header  nav > ul{ 
+        position: absolute;
+        padding: 10px;
+           top: 0;
+           right: 0;
+           z-index: 100 !important;
+           background-color: rgb(255, 255, 255);
+           height: auto;
+           max-width: 300px;
+       }
+       header  nav > ul::before{
+           position: absolute;
+
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           font-family: "Font Awesome 5 Free"; 
+           font-weight: 900;
+            content: "\f00d";
+            font-size: 15px;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: white;
+            color: #000;
+            left: -42px;
+            top: 20px;
+       }
+    </style>
+</body>
+
+</html>

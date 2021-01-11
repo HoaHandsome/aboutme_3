@@ -1,3 +1,27 @@
+        /* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+        
+        
+        
+        
+        
         #wrap-modal{
             position: fixed;
             display: none;
@@ -10,13 +34,13 @@
             background-color: rgba(7, 7, 7, 0.61);
             z-index: 100;
         }
-        #group-img{
+        #group-picture{
             margin: 50px 100px;
             padding: 50px 20px;
             background-color: #fff;
             width: 100%;
         }
-        #wrap-modal .img{
+        #wrap-modal .picture{
             
             position: relative;
             overflow: hidden;
@@ -46,7 +70,7 @@
              top: 20px;
              color: #fff;
          }
-/*          #wrap-modal .img i{
+/*          #wrap-modal .picture i{
              position: absolute;
              top: 50%;
              color: #fff;
@@ -54,14 +78,15 @@
              right: -30px;
              transition: all 0.2s;
          }
-         .img #left{
+         .picture #left{
              left: -30px;
          }
-          #wrap-modal .img:hover i{
+          #wrap-modal .picture:hover i{
               right: 10px;
           }
         
-          #wrap-modal .img:hover #left{
+          #wrap-modal .picture:hover #left{
               left: 10px;
           }
          */
+

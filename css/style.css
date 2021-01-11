@@ -19,6 +19,9 @@ li{
 a:hover{
     text-decoration: none;
 }
+.container{
+    margin: 0 auto;
+}
 .flex{
     display: flex;
 }
@@ -55,8 +58,9 @@ a:hover{
 }
 body{
     background-color: #f3f3f3;
-    position: relative;
+    
 }
+
 body::after{
     content: "";
     position: fixed;
@@ -88,7 +92,7 @@ header h1 a{
      color: #fff;
 }
 header ul{
-    padding-right: 50px;
+    padding-right: 70px;
 }
 header ul li{
     display: inline-block
@@ -104,9 +108,17 @@ header ul li a{
     color: #000;
     font-weight: 700;
 }
+/* menu responsive */
+header #menu-sidebar{
+    display: none;
+}
+#bars {
+    display: none !important;
+}
 
 
 #main .container.flex{
+    display: flex;
     justify-content: space-between;
 }
 /* main left */
@@ -173,52 +185,51 @@ header ul li a{
     padding: 20px;
 
 }
-.card-group > h3{
+.recent-post > h3{
     font-size: 15px;
     line-height: 17px;
     color: #000;
     font-weight: 700;
     margin-bottom:20px ;
 }
-.card-group .pic-article{
+.recent-post .pic-article{
     max-width: 40%;
     height: auto;
 }
-.card-group .pic-article img{
+.recent-post .pic-article img{
    width: 100%;
    height: 100%;
 }
-.card-group  h4 {
+.recent-post  h4 {
     font-size: 15px;
     line-height: 18px;
     font-weight: 700;
     max-width: 55%;
 }
-.card-group  h4 a{
+.recent-post  h4 a{
     color: #000;
 
 }
-.card-group  h3 a{
+.recent-post  h3 a{
     color: #000;
 
 }
 
- .card-group .category a,.card-group .category p{
+ .recent-post .category a,.card-group .category p{
      width: 50%;
      text-align: start;
      color: #000;
-     font-size: ;
      margin-top: 5px;
      font-weight: 400;
      font-size: 13px;
      line-height: 22px;
 }
- .card-group b a{
+ .recent-post b a{
      color: #223D72;
      text-transform: uppercase;
  }
 #main #right-content{
-    max-width: 73%;
+    max-width: 65%;
 }
 
 /* content right*/
@@ -513,7 +524,7 @@ svg {
         cursor: pointer;
         
     }
-    .filter-div .description-img{
+    .filter-div .description-picture{
          content: "";
         position: absolute;
         height: 60px;
@@ -531,7 +542,7 @@ svg {
     .filter-div:hover::after{
         display: block;
     }
-    .filter-div:hover > .description-img{
+    .filter-div:hover > .description-picture{
         bottom: 0;
     }
 
@@ -543,6 +554,9 @@ svg {
     }
     .filter-div:hover img{
         transform: scale(1.1);
+    }
+    .filter-div p{
+        display: none;
     }
     .img-container {
         margin-top: 20px;
@@ -628,7 +642,7 @@ svg {
 .isValidate{
     border-color: #ff4328;
     outline: 0;
-        box-shadow: inset 0 0 0  rgba(0, 0, 0, 0.075), 0 0 8px #ff4328;
+    box-shadow: inset 0 0 0  rgba(0, 0, 0, 0.075), 0 0 8px #ff4328;
 }
 .contact span{
     display: none;
@@ -661,29 +675,62 @@ svg {
 
 
 /* nav */
-#right-content nav ul{
+#main nav ul{
     position: sticky;
     top: 5px;
 }
-#right-content nav li{
+#main nav li{
     width: 50px;
     height: 50px;
     margin-left: 20px;
     margin-bottom: 20px;
+    position: relative;
 }
-#right-content nav i{
+#main nav i{
     font-size: 25px;
     color: #000;
 }
-#right-content nav li:first-child a{
+#main nav li:first-child a{
     width: 100%;
     height: 100%;
 }
-#right-content nav li:first-child img{
+#main nav li:first-child img{
     width: 100%;
     height: 100%;
     border-radius: 50%;
     border: 1px solid rgb(201, 201, 201);
 }
+#main nav li::after{
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 2px;
+    left: calc(100% + 16px);
+    transform: rotate(45deg);
+    display: none;
 
+}
+#main nav p{
+    position: absolute;
+    left: calc(100% + 20px);
+    top: calc(50% - 15px);
+    margin: 0;
+    padding: 7px 20px;
+    font-size: 16px;
+    line-height: 16px;
+    box-shadow: -1px 4px 13px rgba(0,0,0,.25);
+    background-color: #fff;
+    border-radius: 4px;
+    display: none;
+}
+#main nav li:hover > p{
+    display: block;
+
+}
+#main nav li:hover::after{
+    display: block;
+
+}
 
