@@ -44,7 +44,6 @@
            max-width: 300px;
            transition: all 0.2s;
            display: none;
-           margin: 0;
        }
        header  #menu::before{
            position: absolute;
