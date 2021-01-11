@@ -90,7 +90,7 @@
     }
     #menu-sidebar{
         display: block !important;
-        margin-bottom: 0;
+        background-color: #fff;
     }
       #mask{
         position: fixed;
