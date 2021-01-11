@@ -74,8 +74,12 @@ ar.forEach(item=>{
     
     var mask =document.getElementById("mask");
     var menu =document.getElementById('menu');
+    var maskMenu =document.getElementById('mask-menu');
+    var navBar = document.getElementById('nav-bar');
     function openMenu() {
         mask.style.display ="block";
+        navBar.style.display ="block";
+        maskMenu.style.display ="block";
         menu.style.display = "block";
         body[0].classList.add('over');
         setTimeout(() => {
@@ -86,6 +90,8 @@ ar.forEach(item=>{
     function closeMenu() {
         body[0].classList.remove('over');
         mask.style.display = "none";
+        navBar.style.display = "none";
+        maskMenu.style.display ="none";
         menu.style.right ="-150%";
         setTimeout(() => {
             menu.style.display = "none";

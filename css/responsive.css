@@ -1,17 +1,33 @@
 @media only screen and (max-width: 1024px) {
+    .list-date .date {
+     padding: 5px 5px;
+    }
  
 }
 @media only screen and (max-width: 990px) {
-   
+    /*  */
+   .card-group .download_cv {
+    padding: 30px 12px;
+   }
 
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
 }
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 940px) {
+    /*-----------------menu------------ */
+    .container{
+        padding: 0;
+    }
+    body::after{
+        display: none;
+    }
+    body::before{
+        display: none;
+    }
     header ul{
         padding: 0;
     }
-        header  nav{
+        header .container > nav{
         content: " ";
         position: fixed;
         display: flex;
@@ -22,10 +38,12 @@
         height: 100%;
         width: 100%;
         z-index: 50;   
+        display: none;
     }
         #mask-menu{
         content: " ";
         position: fixed;
+        display: none ;
         top: 0;
         left: 0;
         overflow-x: hidden;
@@ -89,6 +107,7 @@
             font-weight: 700 !important;
             background-color: #fff;
             border-radius: 50%;
+            z-index: 100;
     }
     #menu-sidebar{
         display: block !important;
@@ -105,12 +124,153 @@
         z-index: 10;
         display: none;
     }
+    /* ---------------nav------------- */
+    #main .container {
+        flex-direction: column;
+    }
+     #main .container > nav{
+         order: 1;
+     }
+     #main .container > #left-content{
+         order: 2;
+     }
+     #main .container > #right-content{
+         order: 3;
+     }
+     #main .container > nav li {
+         display: inline-block;
+    }
+    #main .container > nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #main .container > nav li {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    }
+    /* ----------content----- */
+    #main .container > nav li a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    }
+    /* ----------content----- */
+    #main #left-content {
+        max-width: 100%;
+    }
+    #main #right-content {
+        max-width: 100%;
+    }
+    .card-group .picture-group {
+        max-width: 100%;
+        max-height: 100%;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    overflow: hidden;
+    }
+    .card-group {
+        margin-bottom: 0;
+        box-shadow: 0 0 0 transparent;
+        background-color: #fff;
+    }
+    .wrap-group {
+        border: 0.1px solid transparent;
+        padding: 40px;
+        margin-bottom: 0;
+    }
+    .wrap-group::after{
+        display: none;
+    }
+
+    .list-date .date {
+        padding: 5px 10px;
+        margin: 10px 0;
+    }
+    .list-articles > .flex-center {
+        margin-top: 20px;
+    }
+    .list-articles > .flex-center a{
+        color: #000;
+    }
+    #fb{
+        display: none;
+    }
 }
 @media only screen and (max-width: 768px) {
 }
 @media only screen and (max-width: 720px) {
 }
 @media only screen and (max-width: 640px) {
+    /* --------skill------ */
+    .list-item.flex-between{
+        flex-direction: column;
+    }
+    .box{
+        width: 100% !important;
+    }
+    .list-job{
+        flex-direction: column;
+    }
+    /* experiecen */
+    .list-date {
+        width: 50%;
+        padding-left: 20px;
+        position: relative;
+    }
+    
+    .list-date .date::after {
+        content: "";
+        position: absolute;
+        border-right: 15px solid #223D72;
+        border-left: 15px solid transparent;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        right: 100% !important;
+        left: auto;
+    top: 0;
+}
+.introduce-job::after {
+    display: none;
+}
+
+    .introduce-job {
+    width: 100%;}
+    .group-job .list-job:first-child .introduce-job::before {
+    top:0;
+}
+    .group-job .list-job:last-child .introduce-job::before {
+    bottom: 15px;
+}
+    
+    .list-date::before {
+    content: " ";
+    position: absolute;
+    background-color: #919eb9;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+}
+/* contact */
+.contact{
+    padding: 0;
+    padding-bottom: 20px;
+
+}
+
+
+
+
+
+
+
+
+
 }
 @media only screen and (max-width: 600px) {
      header nav > ul > li a{
@@ -118,8 +278,18 @@
            padding: 5px 0;
            text-align: center
        }
+       .wrap-group {
+            padding: 20px;
+        }
 }
 @media only screen and (max-width: 568px) {
+    /* --------card----- */
+      .card-group .picture-group {
+    padding: 10px;
+    }
+    .list-date {
+    width: 70%;}
+
 }
 @media only screen and (max-width: 563px) {
 }

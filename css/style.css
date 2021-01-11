@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 img{
     max-width: 100%;
@@ -16,11 +17,17 @@ img{
 li{
     list-style: none;
 }
+
 a:hover{
+    text-decoration: none;
+}
+a{
     text-decoration: none;
 }
 .container{
     margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 10px;
 }
 .flex{
     display: flex;
@@ -210,10 +217,11 @@ header #menu-sidebar{
     color: #000;
 
 }
-.recent-post  h3 a{
+.recent-post  a{
     color: #000;
 
 }
+
 
  .recent-post .category a,.card-group .category p{
      width: 50%;
@@ -233,6 +241,12 @@ header #menu-sidebar{
 }
 
 /* content right*/
+.list-item > p{
+    text-align: justify;
+}
+.wrap-group .button{
+    margin-top: 20px;
+}
 .wrap-group{
     background-color: #fff;
     border: 0.1px solid rgb(201, 201, 201);
@@ -287,7 +301,7 @@ header #menu-sidebar{
     flex-direction: column;
 }
 .wrap-group .box-title{
-    margin-bottom: 35px;
+    margin: 35px 0;
     font-size: 22px;
     font-weight: 400;
     line-height: 24px;
@@ -297,6 +311,7 @@ header #menu-sidebar{
     width: 30%;
     font-weight: 700;
     line-height: 22px;
+    font-size: 16px;
     text-align: left;
     text-transform: uppercase;
 }
@@ -352,7 +367,7 @@ header #menu-sidebar{
     padding-right: 40px;
 }
 .list-date .date{
-    padding:  3px 10px;
+    padding:  5px 10px;
     background-color: #223D72;
     color: #fff;
     position: relative;
@@ -374,6 +389,9 @@ header #menu-sidebar{
  /*    border-left: 4px solid #919eb9; */
     position:relative;
 }
+ .introduce-job p{
+     text-align: justify;
+ }
  .introduce-job::after{
     content: "";
     position: absolute;

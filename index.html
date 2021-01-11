@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+<!--   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script> 
+        crossorigin="anonymous"></script>   -->
         <script src="https://kit.fontawesome.com/66e5d31267.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/base.css">
@@ -40,8 +40,8 @@
 <header>
     <div class="container flex-between">
         <h1><a href="#">V.Hòa</a></h1>
-        <nav>
-            <i class="fas fa-bars" onclick="openMenu()" id="bars"></i>
+        <i class="fas fa-bars" onclick="openMenu()" id="bars"></i>
+        <nav id="nav-bar">
             <div id="mask-menu" onclick="closeMenu()"></div>
             <ul id="menu">
                 <li><a href="#">Home</a></li>
@@ -117,7 +117,7 @@
             <div id="left-content">
                 <!-- card -->
                 <div class="card-group flex-column">
-                    <div class="card flex-column">
+                    <div class="card">
                         <div class="picture-group">
                             <img class="avatar avatar-195" alt="" src="https://certy.px-lab.com/attorney/wp-content/uploads/sites/5/2017/06/Certy_Attorney_2-195x195.jpg"alt="">
                         </div>
@@ -173,7 +173,7 @@
                     </div>
                 </div>
                 <!-- Recent post -->
-                <div class="card-group flex-column recent-post">
+                <div class="card-group flex-column recent-post" id="fb">
                     <h3 class="text-center"><a href="#">FACEBOOK</a></h3>
 
                 </div>
