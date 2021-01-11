@@ -15,6 +15,9 @@
 }
 @media only screen and (max-width: 940px) {
     /*-----------------menu------------ */
+    .wrap-group:nth-child(odd) {
+    background: #f2f4ff;
+}
     .container{
         padding: 0;
     }
@@ -200,6 +203,7 @@
     #fb{
         display: none;
     }
+    
 }
 @media only screen and (max-width: 768px) {
 }
