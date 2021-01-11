@@ -14,6 +14,10 @@
 @media only screen and (max-width: 850px) {
 }
 @media only screen and (max-width: 940px) {
+    /* ------------logo------------- */
+    header h1 a {
+    color: rgb(0, 0, 0);
+}
     /*-----------------menu------------ */
     .wrap-group:nth-child(odd) {
     background: #f2f4ff;
@@ -110,7 +114,7 @@
             font-weight: 700 !important;
             background-color: #fff;
             border-radius: 50%;
-            z-index: 100;
+            z-index: 50;
     }
     #menu-sidebar{
         display: block !important;
@@ -153,6 +157,16 @@
     height: 50px;
     margin: 20px;
     }
+       #main nav li::after {
+        top: calc(100% + 10px);
+    left: calc(50% - 5px);
+    }
+    #main nav p {
+    left: calc(-32%);
+    top: calc(100% + 15px);
+
+}
+   
     /* ----------content----- */
     #main .container > nav li a {
     display: flex;
@@ -203,7 +217,7 @@
     #fb{
         display: none;
     }
-    
+  
 }
 @media only screen and (max-width: 768px) {
 }
