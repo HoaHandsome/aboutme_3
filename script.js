@@ -62,12 +62,8 @@ ar.forEach(item=>{
         
         body[0].classList.add('over');
         modal.style.display = "flex";
-        img = Array.from(item.getElementsByTagName('img'));
-        titleC = Array.from(item.getElementsByClassName('description-picture'));
-        contentC = Array.from(item.getElementsByTagName('p'));
-        
-        title.appendChild(titleC[0]);
-        content.appendChild(contentC[0]);
+        img = Array.from(item.getElementsByTagName('img')); 
+        console.log(img[0]);
         return contentModal.src = img[0].currentSrc;
     }})
     /* responsive menu */

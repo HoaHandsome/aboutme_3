@@ -35,15 +35,20 @@
             z-index: 100;
         }
         #group-picture{
-            margin: 50px 100px;
-            padding: 50px 20px;
+            margin: 50px 50px;
+            padding: 10px;
             background-color: #fff;
             width: 100%;
+        }
+        #group-picture img{
+          margin: 0 auto;
+          padding: 50px;
         }
         #wrap-modal .picture{
             
             position: relative;
             overflow: hidden;
+            
         }
         #wrap-modal .box{
             text-align: left;
@@ -58,11 +63,6 @@
             font-weight: 700;
             margin-bottom: 50px;
             text-transform: uppercase;
-        }
-        #wrap-modal p{
-             font-size: 16px;
-           line-height: 30px;
-            
         }
         #wrap-modal i{
              position: fixed;
