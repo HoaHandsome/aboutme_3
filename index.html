@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <!-- tránitiion  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
 </head>
 <body>
@@ -184,7 +186,7 @@
                 <!-- item -->
                 <div class="wrap-content">
                     <!-- left -->
-                    <div class="wrap-group">
+                    <div class="wrap-group" data-aos="fade-up" >
                         <!-- item list -->
                         <div class="list-item">
                             <h2>ABOUT ME</h2>
@@ -252,7 +254,7 @@
                             </div>
                         </div>
                     </div>                  
-                    <div class="wrap-group" id="experiecen">
+                    <div class="wrap-group" data-aos="fade-down" id="experiecen">
                         <h2>Experience</h2>
                         <div class="group-job flex-column">
                             <!-- list item -->
@@ -297,7 +299,7 @@
                         </div>
 
                     </div>
-                    <div class="wrap-group" id="other">
+                    <div class="wrap-group" data-aos="zoom-out-up" id="other">
                         <h2>Other</h2>
                         <div class="list-item flex-between">
                             <!-- box -->
@@ -417,7 +419,7 @@
 
                         </div>
                     </div>
-                    <div class="wrap-group" id="picture">
+                    <div class="wrap-group" data-aos="fade-right" id="picture">
                         <h2>picture</h2>
                         <div>
                             <div id="btn-contatransparent" class="flex">
@@ -506,7 +508,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="wrap-group" id="blog">
+                    <div class="wrap-group" data-aos="fade-down" id="blog">
                         <h2>blog</h2>
                         <div class="list-item flex-column">
                             <img src="./img/blog.png" alt="">
@@ -515,7 +517,7 @@
                         </div>
                         <a href="blog.html" class="button">Visit Blog</a>
                     </div>
-                    <div class="wrap-group" id="contact">
+                    <div class="wrap-group" data-aos="fade-up" id="contact">
                         <h2>contact</h2>
                         <div class="list-item contact">
                             <ul>
@@ -601,4 +603,8 @@
     </section>
 </body>
 <script src="script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </html>
