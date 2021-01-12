@@ -257,8 +257,6 @@ header #menu-sidebar{
     padding: 45px;
     position: relative;
     margin-bottom: 15px;
-     margin-bottom: 10px;
-
 }
 .wrap-group::after{
     position: absolute;
