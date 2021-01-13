@@ -216,10 +216,12 @@ header #menu-sidebar{
 }
 .recent-post  h4 a{
     color: #000;
+    text-transform: uppercase;
 
 }
 .recent-post  a{
     color: #000;
+    
 
 }
 
@@ -233,10 +235,7 @@ header #menu-sidebar{
      font-size: 13px;
      line-height: 22px;
 }
- .recent-post b a{
-     color: #223D72;
-     text-transform: uppercase;
- }
+
 #main #right-content{
     max-width: 65%;
 }
@@ -279,7 +278,7 @@ header #menu-sidebar{
     line-height: 30px;
 }
 .wrap-group .button{
-    background-color: #fff;
+    background-color: transparent;
     color: #000;
     border:2px solid #223D72;
     padding: 5px 15px;
