@@ -11,6 +11,40 @@
     box-sizing: border-box;
     font-family: 'Yusei Magic', sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+body{
+    background-color: #f3f3f3;
+    
+}
+
+body::after{
+    content: "";
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 68%;
+    bottom: 50%;
+    z-index: -1;
+    transform: rotate(40deg);
+    background-color: #223D72;
+}
+body::before{
+       content: "";
+    position: fixed;
+    border-left: 500px solid transparent;
+    border-right: 500px solid transparent;
+    /* border-top: 500px solid transparent; */
+    border-bottom: 422px solid #a71a1f;
+    right: 55%;
+    top: -73px;
+    transform: rotate(-5deg);
+    z-index: -1;
+}
+
+
 img{
     max-width: 100%;
 }
@@ -49,7 +83,7 @@ a{
     text-align: center;
 }
 .button{
-      display: inline-block;
+    display: inline-block;
     padding: 8px 25px;
     cursor: pointer;
     background-color: #223D72;
@@ -61,43 +95,45 @@ a{
     outline: none;
 }
 .button:hover{
-        box-shadow: -1px 2px 4px rgba(0,0,0,.25);
+    box-shadow: -1px 2px 4px rgba(0,0,0,.25);
 }
-body{
-    background-color: #f3f3f3;
-    
-}
-
-body::after{
-    content: "";
+/* scroll to top */
+#scroll-to-top{
     position: fixed;
+    display: block;
+    bottom: -100px;
+    right: 10px;
+    transition: bottom 1s;
+    margin-bottom: 20px;
+    z-index: 10;
+    outline: none;
+}
+#scroll-to-top a{
     height: 100%;
     width: 100%;
-    left: 68%;
-    bottom: 50%;
-    z-index: -1;
-    transform: rotate(40deg);
-    background-color: #223D72;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
-body::before{
-       content: "";
-    position: fixed;
-    border-left: 500px solid transparent;
-    border-right: 500px solid transparent;
-    /* border-top: 500px solid transparent; */
-    border-bottom: 422px solid #a71a1f;
-    right: 55%;
-    top: -73px;
-    transform: rotate(-5deg);
-    z-index: -1;
+
+#scroll-to-top div{
+    height: 50px;
+    width: 50px;
+    background-color: #2059928c;
+    
+    margin: 10px;
+   /*  border: 0.1px solid white; */
+    
 }
+/* header */
 header{
     padding: 20px 0;
 }
 header h1 a{
-     font-family: 'Luckiest Guy', cursive;/* logo */
+    font-family: 'Luckiest Guy', cursive;/* logo */
      color: #fff;
-}
+    }
 header ul{
     padding-right: 70px;
 }
@@ -190,7 +226,7 @@ header #menu-sidebar{
 }
 /* recent post */
 .recent-post{
-    padding: 20px;
+    padding: 15px;
 
 }
 .recent-post > h3{

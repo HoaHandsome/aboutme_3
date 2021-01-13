@@ -95,3 +95,21 @@ ar.forEach(item=>{
         }, 500);
     
 }
+/* scroll */
+window.addEventListener('scroll', function scroll() {
+    const scrolled = window.scrollY;
+
+
+    if (scrolled < 50) {
+        document.getElementById('scroll-to-top').style.bottom = " -100px";
+    }
+    else {
+        /*         menu.style.background = "white"; */
+        document.getElementById('scroll-to-top').style.bottom = "0px"
+    }
+});
+
+
+/* handle search */
+function handle() {
+    e.preventDefault(); }
