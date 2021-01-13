@@ -331,7 +331,9 @@
     .wrap-group .list-item:first-child {
         margin-bottom: 0;
 
-    }
+    }  .card-group .download_cv {
+    padding: 15px 12px;
+   }
 
 
 
